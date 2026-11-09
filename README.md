@@ -31,7 +31,7 @@
 ## GitHub Pages-এ প্রকাশ
 
 1. GitHub-এ একটি নতুন repository তৈরি করুন (যেমন `48-laws-bn`) এবং এই পুরো ফোল্ডারটি push করুন।
-2. `src/config.json`-এ `site_url` আপনার আসল ঠিকানা দিন, যেমন `https://USERNAME.github.io/48-laws-bn/` (শেষে `/` রাখুন)।
+2. `src/config.json`-এ `site_url` আপনার আসল ঠিকানা দিন, যেমন `https://salehinislam.github.io/The-48-Laws-of-Power/` (শেষে `/` রাখুন)।
 3. সাইট আবার তৈরি করুন:
    ```bash
    cd src
@@ -39,7 +39,7 @@
    ```
    এতে `docs/` ফোল্ডার নতুন করে তৈরি হবে (canonical URL, sitemap, Open Graph সব নতুন ঠিকানায়)।
 4. GitHub-এ **Settings → Pages → Build and deployment → Source: Deploy from a branch**, Branch: `main`, Folder: `/docs` বেছে নিন।
-5. কয়েক মিনিট পর সাইট `https://USERNAME.github.io/48-laws-bn/` ঠিকানায় চালু হবে।
+5. কয়েক মিনিট পর সাইট `https://salehinislam.github.io/The-48-Laws-of-Power/` ঠিকানায় চালু হবে।
 
 সব লিংক relative, তাই repository-র সাব-পাথে (project page) বা নিজস্ব ডোমেইনে — দুই জায়গাতেই কাজ করে। নিজস্ব ডোমেইন ব্যবহার করলে `site_url` সেই ডোমেইনে বদলে আবার build করুন এবং `docs/CNAME` ফাইল যোগ করুন।
 

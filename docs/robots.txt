@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://USERNAME.github.io/48-laws-bn/sitemap.xml
+Sitemap: https://salehinislam.github.io/The-48-Laws-of-Power/sitemap.xml
