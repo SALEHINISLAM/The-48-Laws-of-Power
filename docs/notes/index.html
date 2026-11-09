@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="bn" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>আমার নোট | The 48 Laws of Power বাংলা</title>
+<meta name="description" content="প্রতিটি আইন নিয়ে নিজের ব্যক্তিগত নোট লিখুন, খুঁজুন ও সম্পাদনা করুন — সব কিছু শুধু আপনার ব্রাউজারে।">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://USERNAME.github.io/48-laws-bn/notes/">
+<meta name="theme-color" content="#20235F">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="bn_BD">
+<meta property="og:site_name" content="ক্ষমতা — The 48 Laws of Power বাংলা পাঠ ও অনুশীলন">
+<meta property="og:title" content="আমার নোট | The 48 Laws of Power বাংলা">
+<meta property="og:description" content="প্রতিটি আইন নিয়ে নিজের ব্যক্তিগত নোট লিখুন, খুঁজুন ও সম্পাদনা করুন — সব কিছু শুধু আপনার ব্রাউজারে।">
+<meta property="og:url" content="https://USERNAME.github.io/48-laws-bn/notes/">
+<meta property="og:image" content="https://USERNAME.github.io/48-laws-bn/assets/images/og-cover.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icons/icon-192.png">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="preload" href="../assets/fonts/noto-serif-bengali-bengali-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/main.css?v=8cf7681d">
+<script>(function(){try{var d=JSON.parse(localStorage.getItem('lop48:data')||'{}').prefs||{};var r=document.documentElement;if(d.theme==='light'||d.theme==='dark')r.setAttribute('data-theme',d.theme);if(d.font&&d.font!=='auto')r.setAttribute('data-font',d.font);if(d.fs)r.style.setProperty('--fs',d.fs/16+'rem');if(d.lh)r.style.setProperty('--lh',d.lh);if(d.width)r.style.setProperty('--measure',d.width+'rem')}catch(e){}})();</script>
+
+</head>
+<body>
+<a class="skip" href="#main">মূল লেখায় যান</a>
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="../"><span class="brand-mark" aria-hidden="true">ক্ষ</span><span>ক্ষমতা</span></a>
+<button class="nav-toggle icon-btn" aria-expanded="false" aria-controls="site-nav"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg><span class="sr-only">মেনু</span></button>
+<nav class="nav" id="site-nav" aria-label="প্রধান মেনু"><ul><li><a href="../">হোম</a></li><li><a href="../laws/">৪৮টি আইন</a></li><li><a href="../preface/">ভূমিকা</a></li><li><a href="../bookmarks/">বুকমার্ক</a></li><li><a href="../notes/" aria-current="page">নোট</a></li><li><a href="../settings/">সেটিংস</a></li><li><a href="../about/">পরিচিতি</a></li></ul></nav>
+<button class="icon-btn" id="theme-btn" type="button" aria-label="থিম পরিবর্তন"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+</div>
+<div class="progress-bar" id="read-progress" aria-hidden="true"></div>
+</header>
+<p id="storage-warn" class="wrap muted" hidden role="note">আপনার ব্রাউজারে লোকাল স্টোরেজ বন্ধ আছে — পড়া চলবে, কিন্তু অগ্রগতি ও নোট সংরক্ষিত হবে না।</p>
+<main id="main">
+<div class="wrap" style="max-width:48rem"><header class="page-head"><h1>আমার নোট</h1><p>নোট শুধু এই ব্রাউজারে সংরক্ষিত থাকে। <span id="note-count"></span></p></header>
+<form id="note-form" class="note-form panel"><input type="hidden" id="note-id">
+<div class="field"><label for="note-law">কোন আইন সম্পর্কে</label><select id="note-law"></select></div>
+<div class="field"><label for="note-text">নোট</label><textarea id="note-text" rows="5" required></textarea></div>
+<div><button class="btn" id="note-submit" type="submit">নোট সংরক্ষণ করুন</button> <button class="btn ghost" type="button" id="note-cancel" hidden>বাতিল</button></div></form>
+<div class="toolbar" style="margin-top:1.5rem"><label class="search" for="note-q"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="sr-only">নোট খুঁজুন</span><input type="search" id="note-q" placeholder="নোটে খুঁজুন"></label>
+<label class="sr-only" for="note-filter">আইন অনুযায়ী ফিল্টার</label><select id="note-filter" style="flex:0 1 16rem"></select></div>
+<ul class="note-list" id="note-list"></ul><p class="empty" id="note-empty">কোনো নোট নেই।</p></div>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<p>মূল গ্রন্থ: <span class="en">The 48 Laws of Power</span> — রবার্ট গ্রিন (Robert Greene), জুস্ট এলফার্সের প্রযোজনা। এই ওয়েবসাইট রবার্ট গ্রিনের প্রতি উৎসর্গীকৃত একটি অবাণিজ্যিক, বিনামূল্যের পাঠ-প্রকল্প; এটি লেখক বা মূল প্রকাশকের দ্বারা পরিচালিত বা অনুমোদিত কোনো অফিসিয়াল সাইট নয়।</p>
+<p>বিজ্ঞাপন নেই · ট্র্যাকিং নেই · আপনার নোট ও অগ্রগতি শুধু আপনার ব্রাউজারেই থাকে।</p>
+<ul class="footer-links"><li><a href="../about/">পরিচিতি ও কৃতজ্ঞতা</a></li><li><a href="../bibliography/">গ্রন্থপঞ্জি</a></li><li><a href="../laws/">সব আইন</a></li><li><a href="../settings/">ডেটা ব্যাকআপ</a></li></ul>
+</div>
+</footer>
+<script type="application/json" id="laws-data">[[1,"কখনও আপনার মনিবকে ছাপিয়ে যাবেন না","Never Outshine the Master"],[2,"বন্ধুদের ওপর কখনো খুব বেশি আস্থা রাখবেন না, শত্রুদের কীভাবে ব্যবহার করতে হয় তা শিখুন","Never Put Too Much Trust in Friends, Learn How to Use Enemies"],[3,"আপনার উদ্দেশ্য গোপন রাখুন","Conceal Your Intentions"],[4,"সবসময় প্রয়োজনের চেয়ে কম বলুন","Always Say Less Than Necessary"],[5,"অনেক কিছুই সুনামের ওপর নির্ভর করে—নিজের জীবন দিয়ে একে রক্ষা করুন","So Much Depends on Reputation – Guard It with Your Life"],[6,"যেকোনো মূল্যে মনোযোগ আকর্ষণ করুন","Court Attention at All Costs"],[7,"অন্যদের দিয়ে আপনার কাজ করিয়ে নিন, কিন্তু কৃতিত্ব সবসময় নিজে নিন","Get Others to Do the Work for You, but Always Take the Credit"],[8,"অন্য মানুষকে আপনার কাছে আসতে বাধ্য করুন—প্রয়োজনে টোপ ব্যবহার করুন","Make Other People Come to You – Use Bait if Necessary"],[9,"আপনার কাজের মাধ্যমে জয়ী হোন, তর্কের মাধ্যমে কখনোই নয়","Win Through Your Actions, Never Through Argument"],[10,"সসংক্রমণ: অসুখী এবং দুর্ভাগাদের এড়িয়ে চলুন","Infection: Avoid the Unhappy and Unlucky"],[11,"মানুষকে আপনার ওপর নির্ভরশীল রাখতে শিখুন","Learn to Keep People Dependent on You"],[12,"আপনার শিকারকে নিরস্ত্র করতে বাছাইকৃত সততা এবং উদারতা ব্যবহার করুন","Use Selective Honesty and Generosity to Disarm Your Victim"],[13,"সাহায্যের জন্য আবেদন করার সময় মানুষের স্বার্থের কাছে আবেদন করুন, কখনোই তাদের দয়া বা কৃতজ্ঞতার কাছে নয়","When Asking for Help, Appeal to People's Self-Interest, Never to Their Mercy or Gratitude"],[14,"বন্ধুর মতো আচরণ করুন, গুপ্তচরের মতো কাজ করুন","Pose as a Friend, Work as a Spy"],[15,"আপনার শত্রুকে সম্পূর্ণভাবে চূর্ণ করুন","Crush Your Enemy Totally"],[16,"সম্মান ও মর্যাদা বৃদ্ধির জন্য অনুপস্থিতিকে ব্যবহার করুন","Use Absence to Increase Respect and Honor"],[17,"অন্যদেরকে এক ধরণের অনিশ্চিত আতঙ্কের মধ্যে রাখুন: নিজের মধ্যে এক ধরণের অনিশ্চয়তার আবহ তৈরি করুন","Keep Others in Suspended Terror: Cultivate an Air of Unpredictability"],[18,"নিজেকে রক্ষা করার জন্য দুর্গ তৈরি করবেন না—বিচ্ছিন্নতা বিপজ্জনক","Do Not Build Fortresses to Protect Yourself – Isolation Is Dangerous"],[19,"জানুন আপনি কার সাথে মোকাবিলা করছেন—ভুল ব্যক্তিকে ক্ষুব্ধ করবেন না","Know Who You're Dealing With – Do Not Offend the Wrong Person"],[20,"কারো প্রতি প্রতিশ্রুতিবদ্ধ হবেন না","Do Not Commit to Anyone"],[21,"বোকা ধরার জন্য বোকা সাজুন—আপনার লক্ষ্যের চেয়ে নিজেকে বেশি নির্বোধ হিসেবে প্রকাশ করুন","Play a Sucker to Catch a Sucker – Seem Dumber Than Your Mark"],[22,"আত্মসমর্পণ কৌশল ব্যবহার করুন: দুর্বলতাকে শক্তিতে রূপান্তর করুন","Use the Surrender Tactic: Transform Weakness into Power"],[23,"আপনার শক্তিকে কেন্দ্রীভূত করুন","Concentrate Your Forces"],[24,"একজন নিখুঁত দরবারীর ভূমিকা পালন করুন","Play the Perfect Courtier"],[25,"নিজেকে নতুন করে গড়ে তুলুন","Re-Create Yourself"],[26,"আপনার হাত পরিষ্কার রাখুন","Keep Your Hands Clean"],[27,"একটি ধর্মীয় গোষ্ঠীর মতো অনুসারী তৈরি করতে মানুষের বিশ্বাসের প্রয়োজনীয়তাকে কাজে লাগান","Play on People's Need to Believe to Create a Cultlike Following"],[28,"সাহসিকতার সাথে কাজে নামুন","Enter Action with Boldness"],[29,"শেষ পর্যন্ত পরিকল্পনা করুন","Plan All the Way to the End"],[30,"আপনার কৃতিত্বগুলোকে অনায়াসসাধ্য বলে মনে হতে দিন","Make Your Accomplishments Seem Effortless"],[31,"বিকল্পগুলো নিয়ন্ত্রণ করুন: অন্যদের আপনার দেওয়া তাস দিয়ে খেলতে বাধ্য করুন","Control the Options: Get Others to Play with the Cards You Deal"],[32,"মানুষের কল্পনার সাথে খেলুন","Play to People's Fantasies"],[33,"প্রত্যেক ব্যক্তির দুর্বলতা খুঁজে বের করুন","Discover Each Man's Thumbscrew"],[34,"আপনার নিজস্ব ভঙ্গিতে রাজকীয় হোন: রাজার মতো আচরণ করুন যাতে আপনার সাথে রাজার মতোই আচরণ করা হয়","Be Royal in Your Own Fashion: Act Like a King to Be Treated Like One"],[35,"সময়ের সঠিক ব্যবহারের শিল্পে দক্ষ হোন","Master the Art of Timing"],[36,"যে জিনিসগুলো আপনি পেতে পারেন না সেগুলোকে অবজ্ঞা করুন: সেগুলোকে উপেক্ষা করাই হলো শ্রেষ্ঠ প্রতিশোধ","Disdain Things You Cannot Have: Ignoring Them Is the Best Revenge"],[37,"আকর্ষণীয় দৃশ্যপট তৈরি করুন","Create Compelling Spectacles"],[38,"নিজের মতো চিন্তা করুন কিন্তু অন্যদের মতো আচরণ করুন","Think as You Like but Behave Like Others"],[39,"মাছ ধরার জন্য পানি ঘোলা করুন","Stir Up Waters to Catch Fish"],[40,"বিনামূল্যে পাওয়া জিনিসের প্রতি অবজ্ঞা প্রদর্শন করুন","Despise the Free Lunch"],[41,"কোনো মহান ব্যক্তির পদাঙ্ক অনুসরণ করা এড়িয়ে চলুন","Avoid Stepping into a Great Man's Shoes"],[42,"রাখালকে আঘাত করুন এবং ভেড়ারা ছত্রভঙ্গ হয়ে যাবে","Strike the Shepherd and the Sheep Will Scatter"],[43,"অন্যদের হৃদয় ও মনের ওপর কাজ করুন","Work on the Hearts and Minds of Others"],[44,"মিরর ইফেক্ট বা দর্পণ প্রভাবের মাধ্যমে নিরস্ত্র এবং ক্ষিপ্ত করুন","Disarm and Infuriate with the Mirror Effect"],[45,"পরিবর্তনের প্রয়োজনীয়তা প্রচার করুন, কিন্তু কখনোই একসাথে খুব বেশি সংস্কার করবেন না","Preach the Need for Change, but Never Reform Too Much at Once"],[46,"কখনোই নিজেকে খুব বেশি নিখুঁত হিসেবে উপস্থাপন করবেন না","Never Appear Too Perfect"],[47,"আপনি যে লক্ষ্য নির্ধারণ করেছিলেন তা অতিক্রম করবেন না; বিজয়ের মুহূর্তে, কখন থামতে হবে তা শিখুন","Do Not Go Past the Mark You Aimed For; In Victory, Learn When to Stop"],[48,"নিরাকার রূপ ধারণ করুন","Assume Formlessness"]]</script><script src="../assets/js/app.js?v=8cf7681d" defer></script><script src="../assets/js/pages.js?v=8cf7681d" defer></script>
+</body>
+</html>

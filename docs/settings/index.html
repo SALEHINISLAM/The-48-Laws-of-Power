@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="bn" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>সেটিংস | The 48 Laws of Power বাংলা</title>
+<meta name="description" content="থিম, ফন্ট, লেখার আকার ও লাইনের ফাঁক ঠিক করুন; ব্যক্তিগত ডেটা এক্সপোর্ট, ইমপোর্ট বা মুছুন।">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://USERNAME.github.io/48-laws-bn/settings/">
+<meta name="theme-color" content="#20235F">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="bn_BD">
+<meta property="og:site_name" content="ক্ষমতা — The 48 Laws of Power বাংলা পাঠ ও অনুশীলন">
+<meta property="og:title" content="সেটিংস | The 48 Laws of Power বাংলা">
+<meta property="og:description" content="থিম, ফন্ট, লেখার আকার ও লাইনের ফাঁক ঠিক করুন; ব্যক্তিগত ডেটা এক্সপোর্ট, ইমপোর্ট বা মুছুন।">
+<meta property="og:url" content="https://USERNAME.github.io/48-laws-bn/settings/">
+<meta property="og:image" content="https://USERNAME.github.io/48-laws-bn/assets/images/og-cover.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icons/icon-192.png">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="preload" href="../assets/fonts/noto-serif-bengali-bengali-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/main.css?v=8cf7681d">
+<script>(function(){try{var d=JSON.parse(localStorage.getItem('lop48:data')||'{}').prefs||{};var r=document.documentElement;if(d.theme==='light'||d.theme==='dark')r.setAttribute('data-theme',d.theme);if(d.font&&d.font!=='auto')r.setAttribute('data-font',d.font);if(d.fs)r.style.setProperty('--fs',d.fs/16+'rem');if(d.lh)r.style.setProperty('--lh',d.lh);if(d.width)r.style.setProperty('--measure',d.width+'rem')}catch(e){}})();</script>
+
+</head>
+<body>
+<a class="skip" href="#main">মূল লেখায় যান</a>
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="../"><span class="brand-mark" aria-hidden="true">ক্ষ</span><span>ক্ষমতা</span></a>
+<button class="nav-toggle icon-btn" aria-expanded="false" aria-controls="site-nav"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg><span class="sr-only">মেনু</span></button>
+<nav class="nav" id="site-nav" aria-label="প্রধান মেনু"><ul><li><a href="../">হোম</a></li><li><a href="../laws/">৪৮টি আইন</a></li><li><a href="../preface/">ভূমিকা</a></li><li><a href="../bookmarks/">বুকমার্ক</a></li><li><a href="../notes/">নোট</a></li><li><a href="../settings/" aria-current="page">সেটিংস</a></li><li><a href="../about/">পরিচিতি</a></li></ul></nav>
+<button class="icon-btn" id="theme-btn" type="button" aria-label="থিম পরিবর্তন"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+</div>
+<div class="progress-bar" id="read-progress" aria-hidden="true"></div>
+</header>
+<p id="storage-warn" class="wrap muted" hidden role="note">আপনার ব্রাউজারে লোকাল স্টোরেজ বন্ধ আছে — পড়া চলবে, কিন্তু অগ্রগতি ও নোট সংরক্ষিত হবে না।</p>
+<main id="main">
+<div class="wrap" style="max-width:48rem"><header class="page-head"><h1>সেটিংস</h1><p>পছন্দগুলো সঙ্গে সঙ্গে সংরক্ষিত হয় (শুধু এই ব্রাউজারে)।</p></header>
+<form id="settings-form" class="panel" onsubmit="return false">
+<fieldset class="setting" style="border:0;margin:0"><legend><strong>থিম</strong></legend><div class="seg"><label><input type="radio" name="theme" value="system"> সিস্টেম</label><label><input type="radio" name="theme" value="light"> লাইট</label><label><input type="radio" name="theme" value="dark"> ডার্ক</label></div></fieldset>
+<fieldset class="setting" style="border:0;margin:0"><legend><strong>পাঠের ফন্ট</strong></legend><div class="seg"><label><input type="radio" name="font" value="auto"> স্বয়ংক্রিয়</label><label><input type="radio" name="font" value="solaiman"> SolaimanLipi (ইনস্টল থাকলে)</label><label><input type="radio" name="font" value="serif"> Noto Serif Bengali</label><label><input type="radio" name="font" value="sans"> Noto Sans Bengali</label></div></fieldset>
+<div class="setting"><label for="set-fs"><strong>ফন্টের আকার:</strong> <output id="fs-val"></output></label><input type="range" id="set-fs" min="14" max="28" step="1"></div>
+<div class="setting"><label for="set-lh"><strong>লাইনের ফাঁক:</strong> <output id="lh-val"></output></label><input type="range" id="set-lh" min="1.4" max="2.4" step="0.05"></div>
+<div class="setting"><label for="set-width"><strong>লেখার কলামের প্রস্থ:</strong> <output id="width-val"></output></label><input type="range" id="set-width" min="28" max="56" step="1"></div>
+<div class="setting"><p class="preview">ক্ষমতা হলো একটি সামাজিক খেলা। এই নমুনা লেখায় আপনার বেছে নেওয়া ফন্ট, আকার ও লাইনের ফাঁক দেখা যাচ্ছে।</p>
+<div><button class="btn small ghost" type="button" id="reset-prefs">পাঠ-সেটিংস ডিফল্টে ফেরান</button></div></div>
+</form>
+<section class="section"><h2>ব্যক্তিগত ডেটা</h2>
+<p>আপনার অগ্রগতি, বুকমার্ক, নোট ও অনুশীলনের লেখা শুধু এই ব্রাউজারে আছে। ব্রাউজারের ডেটা মুছলে বা অন্য ডিভাইসে গেলে এগুলো পাওয়া যাবে না — নিয়মিত ব্যাকআপ নিন।</p>
+<div class="grid two">
+<div class="panel"><h3 style="margin-top:0">এক্সপোর্ট</h3><p>সব ডেটা একটি JSON ফাইলে ডাউনলোড করুন।</p><button class="btn" id="export-btn" type="button">ব্যাকআপ ডাউনলোড</button></div>
+<div class="panel"><h3 style="margin-top:0">ইমপোর্ট</h3><p>আগে নেওয়া ব্যাকআপ ফাইল থেকে ডেটা ফিরিয়ে আনুন।</p><label class="btn ghost" for="import-file">ফাইল বেছে নিন</label><input type="file" id="import-file" accept="application/json,.json" class="sr-only"></div>
+</div>
+<div class="panel" style="margin-top:1rem;border-color:var(--red)"><h3 style="margin-top:0">সব ডেটা মুছুন</h3><p>অগ্রগতি, বুকমার্ক, নোট, অনুশীলন ও সেটিংস স্থায়ীভাবে মুছে যাবে।</p><button class="btn danger" id="reset-all" type="button">সব ব্যক্তিগত ডেটা মুছুন</button></div>
+</section></div>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<p>মূল গ্রন্থ: <span class="en">The 48 Laws of Power</span> — রবার্ট গ্রিন (Robert Greene), জুস্ট এলফার্সের প্রযোজনা। এই ওয়েবসাইট রবার্ট গ্রিনের প্রতি উৎসর্গীকৃত একটি অবাণিজ্যিক, বিনামূল্যের পাঠ-প্রকল্প; এটি লেখক বা মূল প্রকাশকের দ্বারা পরিচালিত বা অনুমোদিত কোনো অফিসিয়াল সাইট নয়।</p>
+<p>বিজ্ঞাপন নেই · ট্র্যাকিং নেই · আপনার নোট ও অগ্রগতি শুধু আপনার ব্রাউজারেই থাকে।</p>
+<ul class="footer-links"><li><a href="../about/">পরিচিতি ও কৃতজ্ঞতা</a></li><li><a href="../bibliography/">গ্রন্থপঞ্জি</a></li><li><a href="../laws/">সব আইন</a></li><li><a href="../settings/">ডেটা ব্যাকআপ</a></li></ul>
+</div>
+</footer>
+<script src="../assets/js/app.js?v=8cf7681d" defer></script><script src="../assets/js/pages.js?v=8cf7681d" defer></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://USERNAME.github.io/48-laws-bn/sitemap.xml
